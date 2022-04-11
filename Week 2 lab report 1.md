@@ -20,7 +20,7 @@ Moving files with scp by calling `scp` with the filename and the account name. I
 
 ![Image](vscode.png)
 
-To set up `ssh` keys, we need to type `ssh-keyge`n first in our terminal. Then, enter a file directory to where the key saves locally. Type `y` and create a paraphrase to proceed overwrite. At last, secure copy the public key from locally to the folder in class server. Once this is done, password is not needed for future `ssh` and `scp` from this client to the server.  
+To set up `ssh` keys, we need to type `ssh-keygen` first in our terminal. Then, enter a file directory to where the key saves locally. Type `y` and create a paraphrase to proceed overwrite. At last, secure copy the public key from locally to the folder in class server. Once this is done, password is not needed for future `ssh` and `scp` from this client to the server.  
 
 ![Image](optimize.png)
 
