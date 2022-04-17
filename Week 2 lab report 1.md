@@ -28,15 +28,13 @@ The following screenshot shows the various commands associated with server.
 
 Moving files with scp by calling `scp` with the filename and the account name. In this case, I was copying WhereAmI.java to my course specific folder, `cs15lsp22amk@ieng6.ucsd.edu`, using `scp`. Then, password is likely to be needed for the copying.  
 
-![Image](vscode.png)
+![Image](key.png)
 
-<<<<<<< HEAD
 ## Setting up ssh:
 
-To set up `ssh` keys, we need to type `ssh-keyge`n first in our terminal. Then, enter a file directory to where the key saves locally. Type `y` and create a paraphrase to proceed overwrite. At last, secure copy the public key from locally to the folder in class server. Once this is done, password is not needed for future `ssh` and `scp` from this client to the server.  
-=======
 To set up `ssh` keys, we need to type `ssh-keygen` first in our terminal. Then, enter a file directory to where the key saves locally. Type `y` and create a paraphrase to proceed overwrite. At last, secure copy the public key from locally to the folder in class server. Once this is done, password is not needed for future `ssh` and `scp` from this client to the server.  
->>>>>>> 0158c88068d3f01f9d3be0cd4bf0a36f517f4a5d
+
+To set up `ssh` keys, we need to type `ssh-keygen` first in our terminal. Then, enter a file directory to where the key saves locally. Type `y` and create a paraphrase to proceed overwrite. At last, secure copy the public key from locally to the folder in class server. Once this is done, password is not needed for future `ssh` and `scp` from this client to the server.  
 
 ## Optimization
 ![Image](optimize.png)
