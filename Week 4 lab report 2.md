@@ -27,3 +27,17 @@ In the failure inducing input, I deleted the closed bracket. A OutOfMemoryError 
 
 ### Description of the Bug:
 In the failure inducing input, I added a space between the close bracket and open parenthesis. A OutOfMemoryError occured when the pattern was not followed. Therefore, I added an if statement in getLinks method to make sure the method only works for the pattern where the next element of the close braket is the open parenthesis. Otherwise, it will break the while loop.
+
+## Code Change 3:
+
+### Screenshot of Code Change:
+![Image](Changes2.png)
+
+### Failure Inducing Input:
+![Image](Input2.png)
+
+### Output from Command Line:
+![Image](Output2.png)
+
+### Description of the Bug:
+In the failure inducing input, I deleted the open parenthesis. A OutOfMemoryError occured when the pattern was not followed. Therefore, I added an if statement in getLinks method to make sure the method only works for the pattern where there is a closed bracket and a closed parenthesis. Otherwise, it will break the while loop.
