@@ -27,7 +27,14 @@
 
 ## Copy whole directories with `scp -r`:
 
-### 
+### Screenshot of markdown-parse copying:
+![Image](markdown_copy.png)
+
+### Screenshot of tests ran on ieng6:
+![Image](tests_ran.png)
+
+### Screenshot of running tests in one line:
+![Image](one_line.png)
 
 
 
