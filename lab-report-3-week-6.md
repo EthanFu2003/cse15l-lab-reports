@@ -25,7 +25,11 @@
 ### Commit Link:
 
 
-## Setup Github Access from ieng6:
+## Copy whole directories with `scp -r`:
+
+### 
+
+
 
 
 
