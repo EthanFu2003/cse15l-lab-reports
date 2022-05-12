@@ -20,10 +20,10 @@
 ![Image](private_key.png)
 
 ### Screenshot of public key:
-![Image](git_push.png)
+![Image](git_push1.png)
 
 ### Commit Link:
-
+[Commit Link](https://github.com/EthanFu2003/markdown-parser/commit/75db040466942b3ea04717a17d60225e548f76c4)
 
 ## Copy whole directories with `scp -r`:
 
