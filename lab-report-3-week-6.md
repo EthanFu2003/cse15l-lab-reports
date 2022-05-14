@@ -2,39 +2,38 @@
 
 ## Streamlining ssh Configuration:
 
-### Screenshot of .ssh/config File:
+Creating the .ssh/config File and adding three command lines.
 ![Image](config_file.png)
 
-### Screenshot of ssh Command:
+By typing `ssh ieng6` in the terminal, my computer logs me in with the username I specified.
 ![Image](ssh_alias.png)
 
-### Screenshot of scp Command:
+Secure copying a file to my server account using just the alias.
 ![Image](scp_alias.png)
 
 ## Setup Github Access from ieng6:
 
-### Screenshot of public key:
+Finding the public key I stored in my server account, which, in this case, is within the `id_rsa.pub` file.
 ![Image](public_key.png)
 
-### Screenshot of public key:
+Storing the private key I made on my github account.
 ![Image](private_key.png)
 
-### Screenshot of public key:
+Commiting and pushing a change to github by using commands `add`, `commit`, and `push`.
 ![Image](git_push1.png)
 
-### Commit Link:
 [Commit Link](https://github.com/EthanFu2003/markdown-parser/commit/75db040466942b3ea04717a17d60225e548f76c4)
 
 ## Copy whole directories with `scp -r`:
 
-### Screenshot of markdown-parse copying:
+Copying the entire markdown-parse file to my account using `scp -r` and my alias.
 ![Image](markdown_copy.png)
 
-### Screenshot of tests ran on ieng6:
+Logging in on my server account, and running the tests using JUnit.
 ![Image](tests_ran.png)
 
-### Screenshot of running tests in one line:
-![Image](one_line.png)
+Running `scp`, `ssh`, and all the tests in one line.
+![Image](One_line2.png)
 
 
 
