@@ -7,7 +7,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class MarkdownParse {
+public class BellaReal_MarkdownParse {
 
     public static ArrayList<String> getLinks(String markdown) {
         ArrayList<String> toReturn = new ArrayList<>();
@@ -15,41 +15,41 @@ public class MarkdownParse {
         // find the next [, then find the ], then find the (, then read link up
         // to next )
         int currentIndex = 0;
-        while(scnr.hasNextLine()) {
+        while (scnr.hasNextLine()) {
             int openBracket = markdown.indexOf("[", currentIndex);
             int closeBracket = markdown.indexOf("]", openBracket);
             int openParen = markdown.indexOf("(", closeBracket);
             int closeParen = markdown.indexOf(")", openParen);
 
             // to handle case where one of them loops over the file again
-            if (openBracket < 0 || closeBracket < 0 || openParen < 0 || 
-                closeParen < 0) {
+            if (openBracket < 0 || closeBracket < 0 || openParen < 0 ||
+                    closeParen < 0) {
                 break;
             }
-            //check to make sure link is not an image
+            // check to make sure link is not an image
             Boolean isImage = false;
-            if(openBracket != 0) {
+            if (openBracket != 0) {
                 String type = markdown.substring(openBracket - 1, openBracket);
                 isImage = type.equals("!");
             }
-            
-            //check that link follows format []()
+
+            // check that link follows format []()
             int format = openParen - closeBracket;
             Boolean linkFollowsFormat = true;
-            if(format != 1) {
+            if (format != 1) {
                 linkFollowsFormat = false;
             }
-            
+
             // check that link is a valid link
             String link = markdown.substring(openParen + 1, closeParen);
             Boolean linkHasSpace = link.contains(" ");
             Boolean linkHasBrackets = link.contains("[");
-            if(isImage == false && linkHasSpace == false && linkFollowsFormat == 
-                true && !(link.isEmpty()) && linkHasBrackets == false) {
-                
-                    toReturn.add(link);
+            if (isImage == false && linkHasSpace == false && linkFollowsFormat == true && !(link.isEmpty())
+                    && linkHasBrackets == false) {
+
+                toReturn.add(link);
             }
-            
+
             currentIndex = closeParen + 1;
             scnr.nextLine();
         }
@@ -61,6 +61,6 @@ public class MarkdownParse {
         Path fileName = Path.of(args[0]);
         String content = Files.readString(fileName);
         ArrayList<String> links = getLinks(content);
-	    System.out.println(links);
+        System.out.println(links);
     }
 }
